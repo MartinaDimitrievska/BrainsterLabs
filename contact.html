@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png" />
+    <script
+      src="https://kit.fontawesome.com/3257d9ad29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Brainster Labs - Вработи наш студент</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navigation">
+      <nav>
+        <a id="filter-all" class="logo" href="./index.html"
+          ><img src="./images/Logo.png" alt="logo" />
+          <p>Brainster</p></a
+        >
+        <label>
+          <input type="checkbox" />
+          <span class="menu">
+            <span class="hamburger"></span>
+            <span class="close"></span>
+          </span>
+          <ul>
+            <li>
+              <a href="https://brainster.co/marketing/" target="_blank"
+                >Академија за маркетинг</a
+              >
+            </li>
+            <li>
+              <a href="https://brainster.co/full-stack/" target="_blank"
+                >Академија за програмирање</a
+              >
+            </li>
+            <li>
+              <a href="https://brainster.co/data-science/" target="_blank"
+                >Академија за data science</a
+              >
+            </li>
+            <li>
+              <a href="https://brainster.co/graphic-design/" target="_blank"
+                >Академија за дизајн</a
+              >
+            </li>
+            <div>
+              <a class="contact-btn" href="./contact.html"
+                >Вработи наш студент</a
+              >
+            </div>
+          </ul>
+        </label>
+      </nav>
+    </div>
+    <main>
+      <div class="contact">
+        <h1>Вработи Студенти</h1>
+        <div class="wrapper">
+          <!-- FORM -->
+          <form>
+            <div>
+              <label for="name">Име и презиме</label>
+              <br />
+              <input
+                type="text"
+                id="name"
+                required
+                placeholder="Вашето име и презиме"
+              />
+              <br />
+              <label for="company-name">Име на компанија</label>
+              <br />
+              <input
+                type="text"
+                id="company-name"
+                required
+                placeholder="Име на вашата компанија"
+              />
+            </div>
+            <div>
+              <label for="email">Контакт имејл</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="Контакт имејл на вашата компанија"
+              />
+              <br />
+              <label for="phone">Контакт телефон</label>
+              <br />
+              <input
+                type="tel"
+                id="phone"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                required
+                title="Must contain 9 numbers"
+                placeholder="Контакт телефон на вашата компанија"
+              />
+            </div>
+            <div>
+              <div>
+                <label>Тип на студенти</label>
+                <details class="dropdown">
+                  <summary role="button">
+                    <div>
+                      <p>Изберете тип на студент</p>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li>Студенти од маркетинг</li>
+                    <li>Студенти од програмирање</li>
+                    <li>Студенти од data science</li>
+                    <li>Студенти од дизајн</li>
+                  </ul>
+                </details>
+              </div>
+              <div>
+                <input type="submit" value="Испрати" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- FOOTER -->
+      <h3>
+        Изработено со <i class="fa-solid fa-heart"></i> од студентите на
+        Brainster
+      </h3>
+    </footer>
+  </body>
+</html>
